@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div> 
+      <form id="form1" action="">
+        <input id="input1" type="text">
+      </form>
+    </div>
+  </body>
+  <script>
+    const input = document.getElementById('input1');
+    const text = "vi cau dep trai vl";
+    let index = 0;
+    function nextLetter() {
+      if (index <= text.length ) {
+        input.value = text.substr(0, index++);
+        console.log(index);
+        console.log(text.substr(0, index++));
+
+      } else {
+        index = 0;
+        // input.value = null
+        input.value = text.substr(0, index++);
+      }
+    }
+    input.addEventListener('keyup', function() {
+      nextLetter();
+    })
+  </script>
+</html>
