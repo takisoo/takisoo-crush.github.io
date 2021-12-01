@@ -342,7 +342,7 @@ slide3 {
   .btn5 {
     width: 100px;
     height: 30px;
-    transform: translate(-50%, 15px) !important;
+    transform: translate(-50%, -15px) !important;
     text-align: center;
     padding: 2px;
   }
